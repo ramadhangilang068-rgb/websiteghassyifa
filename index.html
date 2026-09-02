@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Guest House Assyifa| Premium Stay & Event Venue Subang</title>
+    <title>Guest House Assyifa | Premium Stay & Event Venue Subang</title>
+
+    <!-- Guest House Assyifa: logo browser, share preview & shortcut HP -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9b1c3a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Guest House Assyifa">
+
+    <!-- Logo/preview ketika website dibagikan -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guest House Assyifa">
+    <meta property="og:description" content="Premium Stay & Event Venue Subang">
+    <meta property="og:image" content="logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Guest House Assyifa">
+    <meta name="twitter:description" content="Premium Stay & Event Venue Subang">
+    <meta name="twitter:image" content="logo.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1894,11 +1914,13 @@
         .premium-visual-section {
             position: relative;
             overflow: hidden;
+            padding-top: 56px;
+            padding-bottom: 56px;
         }
 
         .visual-section-heading {
-            max-width: 760px;
-            margin: 0 auto 34px;
+            max-width: 700px;
+            margin: 0 auto 26px;
             text-align: center;
         }
 
@@ -1940,7 +1962,7 @@
         }
 
         .visual-slider {
-            width: min(100%, 1080px);
+            width: min(100%, 900px);
             margin: 0 auto;
             outline: none;
         }
@@ -1948,7 +1970,7 @@
         .visual-slider-stage {
             position: relative;
             overflow: hidden;
-            border-radius: 26px;
+            border-radius: 20px;
             background: #211713;
             box-shadow: 0 24px 70px rgba(44, 24, 18, 0.16);
             isolation: isolate;
@@ -1957,7 +1979,7 @@
         .visual-slides {
             position: relative;
             width: 100%;
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 16 / 7;
             overflow: hidden;
             touch-action: pan-y;
         }
@@ -2008,9 +2030,9 @@
         .gallery-slide-info {
             position: absolute;
             z-index: 2;
-            left: clamp(22px, 5vw, 58px);
-            right: clamp(22px, 5vw, 58px);
-            bottom: clamp(24px, 5vw, 52px);
+            left: clamp(18px, 4vw, 42px);
+            right: clamp(18px, 4vw, 42px);
+            bottom: clamp(18px, 4vw, 34px);
             max-width: 720px;
             color: white;
         }
@@ -2058,8 +2080,8 @@
             position: absolute;
             z-index: 4;
             top: 50%;
-            width: 48px;
-            height: 48px;
+            width: 42px;
+            height: 42px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -2078,11 +2100,11 @@
         }
 
         .visual-prev {
-            left: 18px;
+            left: 14px;
         }
 
         .visual-next {
-            right: 18px;
+            right: 14px;
         }
 
         .visual-arrow:hover {
@@ -2098,10 +2120,10 @@
 
         .visual-slider-meta {
             display: grid;
-            grid-template-columns: 90px 1fr 220px;
+            grid-template-columns: 82px 1fr 190px;
             align-items: center;
-            gap: 18px;
-            margin-top: 18px;
+            gap: 14px;
+            margin-top: 12px;
         }
 
         .visual-counter {
@@ -2258,79 +2280,97 @@
         }
 
         @media (max-width: 767px) {
+            .premium-visual-section {
+                padding-top: 44px;
+                padding-bottom: 44px;
+            }
+
             .visual-section-heading {
-                margin-bottom: 24px;
+                margin-bottom: 20px;
                 padding: 0 6px;
             }
 
             .visual-section-heading h2 {
-                font-size: 2rem;
+                font-size: 1.9rem;
             }
 
             .visual-section-heading p {
-                font-size: 0.86rem;
+                font-size: 0.84rem;
+                line-height: 1.5;
+            }
+
+            .visual-slider {
+                width: 100%;
             }
 
             .visual-slider-stage {
-                border-radius: 20px;
+                border-radius: 15px;
             }
 
             .visual-slides {
-                aspect-ratio: 4 / 5;
-                min-height: 430px;
+                aspect-ratio: 16 / 8.2;
+                min-height: 0;
             }
 
             .visual-slide-copy,
             .gallery-slide-info {
-                left: 20px;
-                right: 20px;
-                bottom: 24px;
+                left: 16px;
+                right: 16px;
+                bottom: 14px;
             }
 
             .visual-slide-copy h3,
             .gallery-slide-info h3 {
-                font-size: 1.65rem;
+                font-size: 1.28rem;
+                margin-bottom: 4px;
             }
 
             .visual-slide-copy p,
             .gallery-slide-info p {
-                font-size: 0.79rem;
-                line-height: 1.55;
+                font-size: 0.7rem;
+                line-height: 1.4;
+                max-width: 92%;
+            }
+
+            .visual-kicker,
+            .gallery-category-label {
+                min-height: 22px;
+                padding: 3px 8px;
+                margin-bottom: 5px;
+                font-size: 0.56rem;
             }
 
             .visual-arrow {
-                width: 42px;
-                height: 42px;
-                font-size: 1.75rem;
+                width: 34px;
+                height: 34px;
+                font-size: 1.5rem;
             }
 
             .visual-prev {
-                left: 12px;
+                left: 7px;
             }
 
             .visual-next {
-                right: 12px;
+                right: 7px;
             }
 
             .visual-slider-meta {
-                grid-template-columns: 52px 1fr 52px;
+                grid-template-columns: 64px 1fr;
                 gap: 8px;
-                margin-top: 14px;
+                margin-top: 9px;
             }
 
             .visual-counter {
-                font-size: 0.68rem;
+                font-size: 0.66rem;
                 gap: 5px;
             }
 
             .visual-counter-line {
-                width: 13px;
+                width: 12px;
             }
 
             .visual-caption {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-size: 0.62rem;
+                display: none;
             }
 
             .visual-dots {
@@ -2351,7 +2391,7 @@
                 flex-wrap: nowrap;
                 overflow-x: auto;
                 padding: 2px 2px 7px;
-                margin-bottom: 17px;
+                margin-bottom: 14px;
                 scrollbar-width: none;
             }
 
@@ -2361,21 +2401,21 @@
 
             .gallery-category-nav button {
                 flex: 0 0 auto;
-                min-height: 38px;
-                padding: 8px 15px;
-                font-size: 0.72rem;
+                min-height: 36px;
+                padding: 7px 14px;
+                font-size: 0.7rem;
             }
 
             .gallery-expand {
-                top: 12px;
-                right: 12px;
-                min-height: 36px;
-                padding: 7px 11px;
-                font-size: 0.65rem;
+                top: 10px;
+                right: 10px;
+                min-height: 34px;
+                padding: 6px 10px;
+                font-size: 0.62rem;
             }
 
             .gallery-note {
-                font-size: 0.76rem;
+                font-size: 0.74rem;
             }
         }
 
@@ -3115,34 +3155,32 @@
                 <div class="event-card">
                     <h3>Meeting Package</h3>
                     <p>Ruang dan fasilitas yang mendukung jalannya rapat dan pertemuan organisasi Anda.</p><a
-                        href="#quotation">Inquiry</a>
+                        href="#quotation">Request a Quote →</a>
                 </div>
                 <div class="event-card">
                     <h3>Training Package</h3>
                     <p>Tempat kondusif untuk kegiatan training, workshop, dan pengembangan kapasitas SDM.</p><a
-                        href="#quotation">Inquiry </a>
- →</a>
+                        href="#quotation">Request a Quote →</a>
                 </div>
                 <div class="event-card">
                     <h3>Diklat Package</h3>
                     <p>Mendukung kegiatan pendidikan dan pelatihan (diklat) dalam skala kelompok.</p><a
-                        href="#quotation">Inquiry</a>
+                        href="#quotation">Request a Quote →</a>
                 </div>
                 <div class="event-card">
                     <h3>Gathering Package</h3>
                     <p>Area indoor dan outdoor yang luas untuk membangun kebersamaan tim.</p><a
-                        href="#quotation">Inquiry</a>
- →</a>
+                        href="#quotation">Request a Quote →</a>
                 </div>
                 <div class="event-card">
                     <h3>Family Gathering</h3>
                     <p>Pilihan tepat untuk reuni keluarga atau acara kebersamaan rombongan besar.</p><a
-                        href="#quotation">Inquiry</a>
+                        href="#quotation">Request a Quote →</a>
                 </div>
                 <div class="event-card">
                     <h3>Custom Event</h3>
                     <p>Kami siap menyesuaikan paket dengan kebutuhan spesifik acara Anda.</p><a
-                        href="#quotation">Inquiry →</a>
+                        href="#quotation">Request a Quote →</a>
                 </div>
             </div>
         </div>
@@ -3155,7 +3193,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="badge">Get a Quote</span>
-                <h2 style="color:white;">Request Quotation</h2>
+                <h2 style="color:white;">Request a Quotation</h2>
                 <p style="color:#e5e7eb;">Isi form di bawah ini dan tim kami akan segera menghubungi Anda.</p>
             </div>
             <div class="form-container">
